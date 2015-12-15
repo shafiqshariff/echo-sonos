@@ -9,47 +9,48 @@ list of presets.
 
 In the code, I've implemented handlers for almost all of the actions in Jishi's node API project:
 
-playIntent          - Plays whatever is in queue for the zone specified. Ex: "Alexa, tell Sonos to play in the Living Room"
-playFavoriteIntent  - Plays the Sonos favorite in the zone specified. Ex: "Alexa, tell Sonos to play my favorite Pop Songs in the Living Room"
-playPlaylistIntent  - Plays the Sonos playlist in the zone specified. Ex: "Alexa, tell Sonos to play the playlist Party Time in the Kitchen"
-pauseIntent         - Pauses all zones that are currently playing. Ex: "Alexa, tell Sonos to pause"
-pauseRoomIntent     - Pauses the zone specified. Ex: "Alexa, tell Sonos to pause the Office"
-resumeIntent        - Resumes/Un-Pauses any zones that were paused using the pauseIntent. Ex: "Alexa, tell Sonos to play"
-resumeRoomIntent    - Resumes the zone specified. Ex: "Alexa, tell Sonos to resume in the Bathroom"
-muteRoomIntent      - Mutes the zone specified. Ex: "Alexa, tell Sonos to mute the Den"
-unmuteRoomIntent    - Unmutes the zone specified. Ex: "Alexa, tell Sonos to unmute the Garage"
-skipIntent          - Skips the track in the zone specified. Ex: "Alexa, tell Sonos to skip this track in the Bedroom"
-prevIntent          - Plays the previous track in the zone specified. Ex: "Alexa, tell Sonos to play the previous song in the Loft"
-clearQueueIntent    - Clears the song queue in the zone specified. Ex: "Alexa, tell Sonos to clear the Living Room Queue"
-repeatOnIntent      - Turns on repeat for the queue in the zone specified. Ex: "Alexa, tell Sonos to repeat songs in the Kitchen"
-repeatOffIntent     - Turns off repeat for the queue in the zone specified. Ex: "Alexa, tell Sonos to stop repeating in the Office"
-shuffleOnIntent     - Turns on shuffle for the queue in the zone specified. Ex: "Alexa, tell Sonos to shuffle the songs in the Master Bedroom"
-shuffleOffIntent    - Turns off shuffle for the queue in the zone specified. Ex: "Alexa, tell Sonos to stop shuffling in the Den"
-crossfadeOnIntent   - Turns on crossfade for the queue in the zone specified. Ex: "Alexa, tell Sonos to crossfade the Kitchen"
-crossfadeOffIntent  - Turns off crossfade for the queue in the zone specified. Ex: "Alexa, tell Sonos to stop crossfading the Office"
-volUpRoomIntent     - Turns up the volume in 10% increments for the zone specified. Ex: "Alexa, tell Sonos to turn up the volume in the Kitchen"
-volDownRoomIntent   - Turns down the volume in 10% increments for the zone specified. Ex: "Alexa, tell Sonos to turn it down in the Bedroom"
-volUpIntent         - Turns up the volume in 10% increments for the first available zone, this is helpful if all zones are grouped together. Ex: "Alexa, tell Sonos to turn it up"
-volDownIntent       - Turns down the volume in 10% increments for the first available zone. Ex: "Alexa, tell Sonos to turn the volume down"
-volLevelIntent      - Sets the volume to a specifc level for the first available zone. Ex: "Alexa, tell Sonos to set the volume to 60%"
-volLevelRoomIntent  - Sets the volume to a specific level for the zone specified. Ex: "Alexa, tell Sonos to set the volume to 20% in the Bedroom"
+    `playIntent`  Plays whatever is in queue for the zone specified. Ex: "Alexa, tell Sonos to play in the Living Room"
+    `playFavoriteIntent`  Plays the Sonos favorite in the zone specified. Ex: "Alexa, tell Sonos to play my favorite Pop Songs in the Living Room"
+    `playPlaylistIntent`  Plays the Sonos playlist in the zone specified. Ex: "Alexa, tell Sonos to play the playlist Party Time in the Kitchen"
+    `pauseIntent`  Pauses all zones that are currently playing. Ex: "Alexa, tell Sonos to pause"
+    `pauseRoomIntent`  Pauses the zone specified. Ex: "Alexa, tell Sonos to pause the Office"
+    `resumeIntent`  Resumes/Un-Pauses any zones that were paused using the pauseIntent. Ex: "Alexa, tell Sonos to play"
+    `resumeRoomIntent`  Resumes the zone specified. Ex: "Alexa, tell Sonos to resume in the Bathroom"
+    `muteRoomIntent`  Mutes the zone specified. Ex: "Alexa, tell Sonos to mute the Den"
+    `unmuteRoomIntent`  Unmutes the zone specified. Ex: "Alexa, tell Sonos to unmute the Garage"
+    `skipIntent`  Skips the track in the zone specified. Ex: "Alexa, tell Sonos to skip this track in the Bedroom"
+    `prevIntent`  Plays the previous track in the zone specified. Ex: "Alexa, tell Sonos to play the previous song in the Loft"
+    `clearQueueIntent`  Clears the song queue in the zone specified. Ex: "Alexa, tell Sonos to clear the Living Room Queue"
+    `repeatOnIntent`  Turns on repeat for the queue in the zone specified. Ex: "Alexa, tell Sonos to repeat songs in the Kitchen"
+    `repeatOffIntent`  Turns off repeat for the queue in the zone specified. Ex: "Alexa, tell Sonos to stop repeating in the Office"
+    `shuffleOnIntent`  Turns on shuffle for the queue in the zone specified. Ex: "Alexa, tell Sonos to shuffle the songs in the Master Bedroom"
+    `shuffleOffIntent`  Turns off shuffle for the queue in the zone specified. Ex: "Alexa, tell Sonos to stop shuffling in the Den"
+    `crossfadeOnIntent`  Turns on crossfade for the queue in the zone specified. Ex: "Alexa, tell Sonos to crossfade the Kitchen"
+    `crossfadeOffIntent`  Turns off crossfade for the queue in the zone specified. Ex: "Alexa, tell Sonos to stop crossfading the Office"
+    `volUpRoomIntent`  Turns up the volume in 10% increments for the zone specified. Ex: "Alexa, tell Sonos to turn up the volume in the Kitchen"
+    `volDownRoomIntent`  Turns down the volume in 10% increments for the zone specified. Ex: "Alexa, tell Sonos to turn it down in the Bedroom"
+    `volUpIntent`  Turns up the volume in 10% increments for the first available zone, this is helpful if all zones are grouped together. Ex: "Alexa, tell Sonos to turn it up"
+    `volDownIntent`  Turns down the volume in 10% increments for the first available zone. Ex: "Alexa, tell Sonos to turn the volume down"
+    `volLevelIntent`  Sets the volume to a specifc level for the first available zone. Ex: "Alexa, tell Sonos to set the volume to 60%"
+    `volLevelRoomIntent`  Sets the volume to a specific level for the zone specified. Ex: "Alexa, tell Sonos to set the volume to 20% in the Bedroom"
 
 NOTE: Zone names are not hard coded, so as you expand your Sonos system, you don't need to change the code. The code will also
       check to make sure you provided a valid zone name in your request. If you didn't, it will prompt you with a list of available zones.
 
 #Files Included in this Project
-/echoSkill          - You'll need these files when you setup your custom skill for Alexa
-    intents.json    - This is a list of intents that Alexa attempts to map your request to
-    utterances.txt  - This is a list of things that we expect a user to say to Alexa, which are then mapped to the intents in the file above
-    CustomSlotTypes - These are a set of examples for values a user can provide. You may want to add more examples to the Favorites and Playlist slot values
+You'll need these files when you setup your custom skill for Alexa:
+
+`/echoSkill/intents.json`  This is a list of intents that Alexa attempts to map your request to
+`/echoSkill/utterances.txt`  This is a list of things that we expect a user to say to Alexa, which are then mapped to the intents in the file above
+`/echoSkill/CustomSlotTypes`  These are a set of examples for values a user can provide. You may want to add more examples to the Favorites and Playlist slot values
                       Custom slot values are simply a set of examples, they do not have to be an exhaustive list.
 
-/lambdaService
-    test_intent.json  - This is a test blueprint for testing out your Lambda service
-    /src
-      AlexaSkill.js   - This is a generic set of classes and handlers provided by Amazon
-      index.js        - This is our custom code for handling the intents from Alexa
-      options.js      - This is the only file you'll need to modify. It holds various configuration settings that will be specific to you
+You'll need these files when you setup your Lambda Service:
+
+`/lambdaService/test_intent.json`  This is a test blueprint for testing out your Lambda service
+`/lambdaService/src/AlexaSkill.js`  This is a generic set of classes and handlers provided by Amazon
+`/lambdaService/src/index.js`  This is our custom code for handling the intents from Alexa
+`/lambdaService/src/options.js`  This is the only file you'll need to modify. It holds various configuration settings that will be specific to you
 
 #Setup Overview
 How do you get this all working?
@@ -138,9 +139,11 @@ These features still need to be added...
 
 # NOTES
 Utterances
+
 For a complete list of things you can ask Alexa to do with Sonos, check out echoSkill/utterances.txt.  This is complete list of things this skill can handle. I've
 tried to cover a wide range of possible phrases here, but feel free to suggest more. Some phrases work better than others. For example, I've found Alexa has an
 easier time understanding "tell Sonos to turn up the volume in the Living Room" vs "tell Sonos to turn it up in the Living Room".  Test it out, your mileage may vary.
 
 Error Handling
+
 I've tried to add a bunch of error handling into the script, however I'm sure unforseen things will happen. If you run into problems, feel free to drop me a note.
