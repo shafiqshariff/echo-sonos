@@ -59,7 +59,7 @@ You'll need these files when you setup your Lambda Service:
 
 `/lambdaService/src/index.js`       This is our custom code for handling the intents from Alexa
 
-`/lambdaService/src/options.js`     This is the only file you'll need to modify. It holds various configuration settings that will be specific to you
+`/lambdaService/src/options.js.sample`     This is the only file you'll need to modify. It holds various configuration settings that will be specific to you. You'll need to rename this file to 'options.js'
 
 ##To Do:
 These features still need to be added...
@@ -87,7 +87,7 @@ How do you get this all working?
 4. Create an AWS Lambda Service
 5. Connect your custom Alexa Skill to AWS Lambda
 
-##Setup node-sonos-http-api
+##1. Setup node-sonos-http-api
 1. Install node.js on a server on the same network as your Sonos.
    This MUST be running inside of your network. In my setup, I used a Raspberry Pi 2 Model B to host the local server.
    The built-in Raspberian OS can run your Node server just fine.
@@ -99,7 +99,7 @@ How do you get this all working?
 5. If you have problems, make sure you are on the same network as your Sonos AND make sure you don't have a Sonos client running on the same machine.
    The client can interfere with the node.js server.
 
-##Expose your local server to the internet
+##2. Expose your local server to the internet
 1. You'll need to use some kind of Dynamic DNS service to allow AWS Lambda to contact your server
    I use No-Ip.com, but there a lot of other options like DynDNS or yDNS.eu
    Basically, these services keep track of your home IP address in case your ISP changes it
@@ -110,7 +110,7 @@ How do you get this all working?
 4. Setup your server to auto-start or daemonize the node-sonos-http-api server.
 5. Test it by hitting http://<your external DNS address>:5005/zones.
 
-##Create a Custom Alexa Skill
+##3. Create a Custom Alexa Skill
 1. Create a new Skill in the Alexa Skills control panel on Amazon. You need a developer account to do this.
    You can sign up here: https://developer.amazon.com/echo
 2. Once you're logged into the Amazon Developer Console, click Apps & Services > Alexa
@@ -127,20 +127,21 @@ How do you get this all working?
 8. Copy the contents of echoSkill/utterances.txt into Sample Utterances
 9. Don't test yet, just save. Click back to "Skill Information" and copy the "Application ID". You'll need this for your Lambda service.
 
-##Create an AWS Lambda Service
+##4. Create an AWS Lambda Service
 1. Create an AWS Lambda account if you don't have one already. It's free!
    You can do that here: https://console.aws.amazon.com
 2. In the Lambda console, look to the upper right. Make sure "N. Virginia" is selected, because not every zone supports Alexa yet.
 3. Under compute, click Lambda
 4. Create a new Lambda function. Skip the blueprint.
 5. Pick any name you want, and choose runtime Node.js.
-6. Edit lambdaService/src/options.js to have your public FQDN in the host field, your port, and the Alexa App ID you just copied.
-7. In lambdaService/src, zip up everything. On Mac, "cd src; zip -r src.zip *.js".  Make sure you don't capture the folder, just the files.
-8. Choose to upload the zip file for src.zip.
-9. The default handler is fine. Create a new role of type Basic Execution Role. Pick smallest possible memory and so on.
-10. Click Next to proceed. Once created, click "Event Sources".
-11. Add a source.  Choose "Alexa Skills Kit".
-12. Test it out.
+6. Edit lambdaService/src/options.js.sample to have your public FQDN in the host field, your port, and the Alexa App ID you just copied.
+7. Rename lambdaService/src/options.js.sample to lambdaService/src/options.js (removing the .sample extension)
+8. In lambdaService/src, zip up everything. On Mac, "cd src; zip -r src.zip *.js".  Make sure you don't capture the folder, just the files.
+9. Choose to upload the zip file for src.zip.
+10. The default handler is fine. Create a new role of type Basic Execution Role. Pick smallest possible memory and so on.
+11. Click Next to proceed. Once created, click "Event Sources".
+12. Add a source.  Choose "Alexa Skills Kit".
+13. Test it out.
     There is a test blueprint here lambdaService/test_intent.json
     Copy/paste this JSON into the Lambda test event box. You'll need to edit the JSON to put the Alexa App ID you copied above into the applicationID field.
     By default, the test blueprint will attempt to play a zone called 'office'. You can either change this to the name of one of your zones or leave it. If
@@ -148,7 +149,7 @@ How do you get this all working?
     If you get an error, it is most likely because Lambda cannot reach your local server. Make sure that you can reach your node-sonos-http-api server at the
     host name and port that are specified in the lambdaService/src/options.js file.
 
-##Connect your custom Alexa Skill to AWS Lambda
+##5. Connect your custom Alexa Skill to AWS Lambda
 1. In the Lambda console, copy the long "ARN" string in the upper right.
 2. Go back into the Alexa Skill console, open your skill, click "Skill Information", choose Lambda ARN and paste that ARN string in.
 3. You're good to go.
