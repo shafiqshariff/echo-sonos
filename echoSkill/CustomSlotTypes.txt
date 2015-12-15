@@ -1,0 +1,43 @@
+#SLOT TYPE
+LIST_OF_FAVORITES
+
+#SLOT VALUES
+Discover Weekly
+Songs
+
+
+#SLOT TYPE
+LIST_OF_PLAYLISTS
+
+#SLOT VALUES
+Party
+
+
+#SLOT TYPE
+LIST_OF_ZONES
+
+#SLOT VALUES
+Living Room
+Loft
+Basement
+Office
+Kitchen
+Bathroom
+Bedroom
+Den
+Dining Room
+Family Room
+Foyer
+Garage
+Garden
+Guest Room
+Hallway
+Library
+Lounge
+Master Bedroom
+Media Room
+Patio
+Playroom
+Pool
+Portable
+TV Room
