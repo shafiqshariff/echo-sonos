@@ -1,0 +1,9 @@
+var options = {
+    appid: "<insert your Echo Skill AppID Here",
+    host: "<Insert the FQDN for your local server here>",
+    port: "5005",
+    timeout: 1500
+};
+
+module.exports = options;
+
