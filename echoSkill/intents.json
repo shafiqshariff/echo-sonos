@@ -1,0 +1,215 @@
+{
+  "intents": [
+    {
+      "intent": "playIntent",
+      "slots": [
+        {
+          "name": "zone",
+          "type": "LIST_OF_ZONES"
+        }
+      ]
+    },
+    {
+      "intent": "playFavoriteIntent",
+      "slots": [
+        {
+          "name": "zone",
+          "type": "LIST_OF_ZONES"
+        },
+        {
+          "name": "favorite",
+          "type": "LIST_OF_FAVORITES"
+        }
+      ]
+    },
+    {
+      "intent": "playPlaylistIntent",
+      "slots": [
+        {
+          "name": "zone",
+          "type": "LIST_OF_ZONES"
+        },
+        {
+          "name": "playlist",
+          "type": "LIST_OF_PLAYLISTS"
+        }
+      ]
+    },
+    {
+      "intent": "pauseIntent",
+      "slots":  []
+    },
+    {
+      "intent": "pauseRoomIntent",
+      "slots": [
+        {
+          "name": "zone",
+          "type": "LIST_OF_ZONES"
+        }
+      ]
+    },
+    {
+      "intent": "resumeIntent",
+      "slots":  []
+    },
+    {
+      "intent": "resumeRoomIntent",
+      "slots": [
+        {
+          "name": "zone",
+          "type": "LIST_OF_ZONES"
+        }
+      ]
+    },
+    {
+      "intent": "muteRoomIntent",
+      "slots": [
+        {
+          "name": "zone",
+          "type": "LIST_OF_ZONES"
+        }
+      ]
+    },
+    {
+      "intent": "unmuteRoomIntent",
+      "slots": [
+        {
+          "name": "zone",
+          "type": "LIST_OF_ZONES"
+        }
+      ]
+    },
+    {
+      "intent": "skipIntent",
+      "slots": [
+        {
+          "name": "zone",
+          "type": "LIST_OF_ZONES"
+        }
+      ]
+    },
+    {
+      "intent": "prevIntent",
+      "slots":  [
+        {
+          "name": "zone",
+          "type": "LIST_OF_ZONES"
+        }
+      ]
+    },
+    {
+      "intent": "clearQueueIntent",
+      "slots":  [
+        {
+          "name": "zone",
+          "type": "LIST_OF_ZONES"
+        }
+      ]
+    },
+    {
+      "intent": "repeatOnIntent",
+      "slots":  [
+        {
+          "name": "zone",
+          "type": "LIST_OF_ZONES"
+        }
+      ]
+    },
+    {
+      "intent": "repeatOffIntent",
+      "slots":  [
+        {
+          "name": "zone",
+          "type": "LIST_OF_ZONES"
+        }
+      ]
+    },
+    {
+      "intent": "shuffleOnIntent",
+      "slots":  [
+        {
+          "name": "zone",
+          "type": "LIST_OF_ZONES"
+        }
+      ]
+    },
+    {
+      "intent": "shuffleOffIntent",
+      "slots":  [
+        {
+          "name": "zone",
+          "type": "LIST_OF_ZONES"
+        }
+      ]
+    },
+    {
+      "intent": "crossfadeOnIntent",
+      "slots":  [
+        {
+          "name": "zone",
+          "type": "LIST_OF_ZONES"
+        }
+      ]
+    },
+    {
+      "intent": "crossfadeOffIntent",
+      "slots":  [
+        {
+          "name": "zone",
+          "type": "LIST_OF_ZONES"
+        }
+      ]
+    },
+    {
+      "intent": "volUpRoomIntent",
+      "slots":  [
+        {
+          "name": "zone",
+          "type": "LIST_OF_ZONES"
+        }
+      ]
+    },
+    {
+      "intent": "volDownRoomIntent",
+      "slots":  [
+        {
+          "name": "zone",
+          "type": "LIST_OF_ZONES"
+        }
+      ]
+    },
+    {
+      "intent": "volUpIntent",
+      "slots":  []
+    },
+    {
+      "intent": "volDownIntent",
+      "slots":  []
+    },
+    {
+      "intent": "volLevelIntent",
+      "slots":  [
+        {
+          "name": "level",
+          "type": "AMAZON.NUMBER"
+        }
+      ]
+    },
+    {
+      "intent": "volLevelRoomIntent",
+      "slots":  [
+        {
+          "name": "zone",
+          "type": "LIST_OF_ZONES"
+        },
+        {
+          "name": "level",
+          "type": "AMAZON.NUMBER"
+        }
+      ]
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    }
+  ]
+}

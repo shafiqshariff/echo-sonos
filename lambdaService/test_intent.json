@@ -7,19 +7,19 @@
       "userId": null
     },
     "application": {
-      "applicationId": "YOUR_ECHO_AWS_APP_ID_HERE"
+      "applicationId": "<Your Alexa Skill Application ID>"
     }
   },
   "version": "1.0",
   "request": {
     "intent": {
       "slots": {
-        "Preset": {
-          "name": "Preset",
-          "value": "test"
+        "zone": {
+          "name": "zone",
+          "value": "office"
         }
       },
-      "name": "PlayIntent"
+      "name": "playIntent"
     },
     "type": "IntentRequest",
     "requestId": "request5678"

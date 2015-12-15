@@ -1,0 +1,415 @@
+playIntent play {zone}
+playIntent play in {zone}
+playIntent to play {zone}
+playIntent to play the {zone}
+playIntent to play in the {zone}
+playIntent resume {zone}
+playIntent resume in {zone}
+playIntent to resume {zone}
+playIntent to resume the {zone}
+playIntent to resume in the {zone}
+playIntent unpause {zone}
+playIntent unpause in {zone}
+playIntent to unpause {zone}
+playIntent to unpause the {zone}
+playIntent to unpause in the {zone}
+
+playFavoriteIntent to play favorite {favorite} in {zone}
+playFavoriteIntent to play my favorite {favorite} in {zone}
+playFavoriteIntent to play the favorite {favorite} in {zone}
+playFavoriteIntent to play favorite {favorite} in the {zone}
+playFavoriteIntent to play my favorite {favorite} in the {zone}
+playFavoriteIntent to play the favorite {favorite} in {zone}
+playFavoriteIntent to play the favorite {favorite} in the {zone}
+
+playPlaylistIntent to play playlist {playlist} in {zone}
+playPlaylistIntent to play playlist {playlist} in the {zone}
+playPlaylistIntent to play my playlist {playlist} in {zone}
+playPlaylistIntent to play my playlist {playlist} in the {zone}
+playPlaylistIntent to play the playlist {playlist} in {zone}
+playPlaylistIntent to play the playlist {playlist} in the {zone}
+playPlaylistIntent to play {playlist} playlist in {zone}
+playPlaylistIntent to play {playlist} playlist in the {zone}
+playPlaylistIntent to play my {playlist} playlist in {zone}
+playPlaylistIntent to play my {playlist} playlist in the {zone}
+playPlaylistIntent to play the {playlist} playlist in {zone}
+playPlaylistIntent to play the {playlist} playlist in the {zone}
+
+pauseIntent stop
+pauseIntent off
+pauseIntent pause
+pauseIntent turn off
+pauseIntent to stop
+pauseIntent to pause
+pauseIntent to turn off
+
+pauseRoomIntent stop {zone}
+pauseRoomIntent to stop {zone}
+pauseRoomIntent to stop the {zone}
+pauseRoomIntent to stop in {zone}
+pauseRoomIntent to stop in the {zone}
+pauseRoomIntent pause {zone}
+pauseRoomIntent to pause {zone}
+pauseRoomIntent to pause the {zone}
+pauseRoomIntent to pause in {zone}
+pauseRoomIntent to pause in the {zone}
+pauseRoomIntent to turn {zone} off
+pauseRoomIntent to turn the {zone} off
+
+resumeIntent play
+resumeIntent to play
+resumeIntent resume
+resumeIntent to resume
+resumeIntent unpause
+resumeIntent to unpause
+
+muteRoomIntent mute {zone}
+muteRoomIntent mute in {zone}
+muteRoomIntent mute the {zone}
+muteRoomIntent to mute {zone}
+muteRoomIntent to mute in {zone}
+muteRoomIntent to mute the {zone}
+muteRoomIntent to mute in the {zone}
+
+unmuteRoomIntent unmute {zone}
+unmuteRoomIntent unmute in {zone}
+unmuteRoomIntent unmute the {zone}
+unmuteRoomIntent to unmute {zone}
+unmuteRoomIntent to unmute in {zone}
+unmuteRoomIntent to unmute the {zone}
+unmuteRoomIntent to unmute in the {zone}
+
+skipIntent skip {zone}
+skipIntent skip this {zone}
+skipIntent skip this track {zone}
+skipIntent skip this song {zone}
+skipIntent skip this track in {zone}
+skipIntent skip this track in the {zone}
+skipIntent skip this song in {zone}
+skipIntent skip this song in the {zone}
+skipIntent to skip {zone}
+skipIntent to skip this {zone}
+skipIntent to skip this track {zone}
+skipIntent to skip this song {zone}
+skipIntent to skip this track in {zone}
+skipIntent to skip this track in the {zone}
+skipIntent to skip this song in {zone}
+skipIntent to skip this song in the {zone}
+skipIntent to skip in {zone}
+skipIntent to skip the {zone}
+skipIntent to skip in the {zone}
+skipIntent to skip track in {zone}
+skipIntent to skip track in the {zone}
+skipIntent to skip the track in {zone}
+skipIntent to skip the track in the {zone}
+skipIntent to skip song in {zone}
+skipIntent to skip song in the {zone}
+skipIntent to skip the song in {zone}
+skipIntent to skip the song in the {zone}
+skipIntent to play next in {zone}
+skipIntent to play next in the {zone}
+skipIntent to play next track in {zone}
+skipIntent to play next track in the {zone}
+skipIntent to play next song in {zone}
+skipIntent to play next song in the {zone}
+skipIntent to play the next track in {zone}
+skipIntent to play the next track in the {zone}
+skipIntent to play the next song in {zone}
+skipIntent to play the next song in the {zone}
+
+prevIntent previous {zone}
+prevIntent previous in {zone}
+prevIntent previous in the {zone}
+prevIntent previous track in {zone}
+prevIntent previous track in the {zone}
+prevIntent previous song in {zone}
+prevIntent previous song in the {zone}
+prevIntent to play previous in {zone}
+prevIntent to play previous in the {zone}
+prevIntent to play previous track in {zone}
+prevIntent to play previous track in the {zone}
+prevIntent to play previous song in {zone}
+prevIntent to play previous song in the {zone}
+prevIntent to play the previous in {zone}
+prevIntent to play the previous in the {zone}
+prevIntent to play the previous track in {zone}
+prevIntent to play the previous track in the {zone}
+prevIntent to play the previous song in {zone}
+prevIntent to play the previous song in the {zone}
+prevIntent last {zone}
+prevIntent last in {zone}
+prevIntent last in the {zone}
+prevIntent last track in {zone}
+prevIntent last track in the {zone}
+prevIntent last song in {zone}
+prevIntent last song in the {zone}
+prevIntent to play last in {zone}
+prevIntent to play last in the {zone}
+prevIntent to play last track in {zone}
+prevIntent to play last track in the {zone}
+prevIntent to play last song in {zone}
+prevIntent to play last song in the {zone}
+prevIntent to play the last in {zone}
+prevIntent to play the last in the {zone}
+prevIntent to play the last track in {zone}
+prevIntent to play the last track in the {zone}
+prevIntent to play the last song in {zone}
+prevIntent to play the last song in the {zone}
+
+clearQueueIntent clear {zone}
+clearQueueIntent to clear {zone}
+clearQueueIntent clear queue {zone}
+clearQueueIntent clear queue in {zone}
+clearQueueIntent to clear queue in {zone}
+clearQueueIntent clear the queue {zone}
+clearQueueIntent clear the queue in {zone}
+clearQueueIntent clear the queue in the {zone}
+clearQueueIntent to clear the queue in {zone}
+clearQueueIntent to clear the queue in the {zone}
+clearQueueIntent clear the queue for {zone}
+clearQueueIntent clear the queue for the {zone}
+clearQueueIntent to clear the queue for {zone}
+clearQueueIntent to clear the queue for the {zone}
+clearQueueIntent clear the {zone} queue
+clearQueueIntent to clear the {zone} queue
+
+repeatOnIntent repeat {zone}
+repeatOnIntent repeat in {zone}
+repeatOnIntent repeat in the {zone}
+repeatOnIntent turn repeat on in {zone}
+repeatOnIntent repeat songs in {zone}
+repeatOnIntent repeat tracks in {zone}
+repeatOnIntent turn repeat on in the {zone}
+repeatOnIntent repeat songs in the {zone}
+repeatOnIntent repeat tracks in the {zone}
+repeatOnIntent to repeat {zone}
+repeatOnIntent to repeat in {zone}
+repeatOnIntent to repeat in the {zone}
+repeatOnIntent to turn repeat on in {zone}
+repeatOnIntent to repeat songs in {zone}
+repeatOnIntent to repeat tracks in {zone}
+repeatOnIntent to turn repeat on in the {zone}
+repeatOnIntent to repeat songs in the {zone}
+repeatOnIntent to repeat tracks in the {zone}
+
+repeatOffIntent stop repeat {zone}
+repeatOffIntent stop {zone} repeat
+repeatOffIntent stop repeat in {zone}
+repeatOffIntent stop repeat in the {zone}
+repeatOffIntent stop repeating {zone}
+repeatOffIntent stop {zone} repeating
+repeatOffIntent stop repeating in {zone}
+repeatOffIntent stop repeating in the {zone}
+repeatOffIntent to stop repeat {zone}
+repeatOffIntent to stop {zone} repeat
+repeatOffIntent to stop repeat in {zone}
+repeatOffIntent to stop repeat in the {zone}
+repeatOffIntent to stop repeating {zone}
+repeatOffIntent to stop {zone} repeating
+repeatOffIntent to stop repeating in {zone}
+repeatOffIntent to stop repeating in the {zone}
+repeatOffIntent turn repeat off in {zone}
+repeatOffIntent turn repeat off in the {zone}
+repeatOffIntent to turn repeat off in {zone}
+repeatOffIntent to turn repeat off in the {zone}
+repeatOffIntent stop repeating songs in {zone}
+repeatOffIntent to stop repeating songs in {zone}
+repeatOffIntent stop repeating songs in the {zone}
+repeatOffIntent to stop repeating songs in the {zone}
+repeatOffIntent stop repeating tracks in {zone}
+repeatOffIntent to stop repeating tracks in {zone}
+repeatOffIntent stop repeating tracks in the {zone}
+repeatOffIntent to stop repeating tracks in the {zone}
+
+shuffleOnIntent shuffle {zone}
+shuffleOnIntent shuffle in {zone}
+shuffleOnIntent shuffle in the {zone}
+shuffleOnIntent turn shuffle on in {zone}
+shuffleOnIntent shuffle songs in {zone}
+shuffleOnIntent shuffle tracks in {zone}
+shuffleOnIntent turn shuffle on in the {zone}
+shuffleOnIntent shuffle songs in the {zone}
+shuffleOnIntent shuffle tracks in the {zone}
+shuffleOnIntent to shuffle {zone}
+shuffleOnIntent to shuffle in {zone}
+shuffleOnIntent to shuffle in the {zone}
+shuffleOnIntent to turn shuffle on in {zone}
+shuffleOnIntent to shuffle songs in {zone}
+shuffleOnIntent to shuffle tracks in {zone}
+shuffleOnIntent to turn shuffle on in the {zone}
+shuffleOnIntent to shuffle songs in the {zone}
+shuffleOnIntent to shuffle tracks in the {zone}
+
+shuffleOffIntent stop shuffle {zone}
+shuffleOffIntent stop {zone} shuffle
+shuffleOffIntent stop shuffle in {zone}
+shuffleOffIntent stop shuffle in the {zone}
+shuffleOffIntent stop shuffling {zone}
+shuffleOffIntent stop {zone} shuffling
+shuffleOffIntent stop shuffling in {zone}
+shuffleOffIntent stop shuffling in the {zone}
+shuffleOffIntent to stop shuffle {zone}
+shuffleOffIntent to stop {zone} shuffle
+shuffleOffIntent to stop shuffle in {zone}
+shuffleOffIntent to stop shuffle in the {zone}
+shuffleOffIntent to stop shuffling {zone}
+shuffleOffIntent to stop {zone} shuffling
+shuffleOffIntent to stop shuffling in {zone}
+shuffleOffIntent to stop shuffling in the {zone}
+shuffleOffIntent turn shuffle off in {zone}
+shuffleOffIntent turn shuffle off in the {zone}
+shuffleOffIntent to turn shuffle off in {zone}
+shuffleOffIntent to turn shuffle off in the {zone}
+shuffleOffIntent stop shuffling songs in {zone}
+shuffleOffIntent to stop shuffling songs in {zone}
+shuffleOffIntent stop shuffling songs in the {zone}
+shuffleOffIntent to stop shuffling songs in the {zone}
+shuffleOffIntent stop shuffling tracks in {zone}
+shuffleOffIntent to stop shuffling tracks in {zone}
+shuffleOffIntent stop shuffling tracks in the {zone}
+shuffleOffIntent to stop shuffling tracks in the {zone}
+
+crossfadeOnIntent crossfade {zone}
+crossfadeOnIntent crossfade in {zone}
+crossfadeOnIntent crossfade in the {zone}
+crossfadeOnIntent turn crossfade on in {zone}
+crossfadeOnIntent crossfade songs in {zone}
+crossfadeOnIntent crossfade tracks in {zone}
+crossfadeOnIntent turn crossfade on in the {zone}
+crossfadeOnIntent crossfade songs in the {zone}
+crossfadeOnIntent crossfade tracks in the {zone}
+crossfadeOnIntent to crossfade {zone}
+crossfadeOnIntent to crossfade in {zone}
+crossfadeOnIntent to crossfade in the {zone}
+crossfadeOnIntent to turn crossfade on in {zone}
+crossfadeOnIntent to crossfade songs in {zone}
+crossfadeOnIntent to crossfade tracks in {zone}
+crossfadeOnIntent to turn crossfade on in the {zone}
+crossfadeOnIntent to crossfade songs in the {zone}
+crossfadeOnIntent to crossfade tracks in the {zone}
+
+crossfadeOffIntent stop crossfade {zone}
+crossfadeOffIntent stop {zone} crossfade
+crossfadeOffIntent stop crossfade in {zone}
+crossfadeOffIntent stop crossfade in the {zone}
+crossfadeOffIntent stop crossfading {zone}
+crossfadeOffIntent stop {zone} crossfading
+crossfadeOffIntent stop crossfading in {zone}
+crossfadeOffIntent stop crossfading in the {zone}
+crossfadeOffIntent to stop crossfade {zone}
+crossfadeOffIntent to stop {zone} crossfade
+crossfadeOffIntent to stop crossfade in {zone}
+crossfadeOffIntent to stop crossfade in the {zone}
+crossfadeOffIntent to stop crossfading {zone}
+crossfadeOffIntent to stop {zone} crossfading
+crossfadeOffIntent to stop crossfading in {zone}
+crossfadeOffIntent to stop crossfading in the {zone}
+crossfadeOffIntent turn crossfade off in {zone}
+crossfadeOffIntent turn crossfade off in the {zone}
+crossfadeOffIntent to turn crossfade off in {zone}
+crossfadeOffIntent to turn crossfade off in the {zone}
+crossfadeOffIntent stop crossfading songs in {zone}
+crossfadeOffIntent to stop crossfading songs in {zone}
+crossfadeOffIntent stop crossfading songs in the {zone}
+crossfadeOffIntent to stop crossfading songs in the {zone}
+crossfadeOffIntent stop crossfading tracks in {zone}
+crossfadeOffIntent to stop crossfading tracks in {zone}
+crossfadeOffIntent stop crossfading tracks in the {zone}
+crossfadeOffIntent to stop crossfading tracks in the {zone}
+
+volUpRoomIntent turn up {zone}
+volUpRoomIntent turn it up in {zone}
+volUpRoomIntent turn it up in the {zone}
+volUpRoomIntent to turn up {zone}
+volUpRoomIntent to turn it up in {zone}
+volUpRoomIntent to turn it up in the {zone}
+volUpRoomIntent louder in {zone}
+volUpRoomIntent louder in the {zone}
+volUpRoomIntent to make it louder in {zone}
+volUpRoomIntent to make it louder in the {zone}
+volUpRoomIntent to increase volume in {zone}
+volUpRoomIntent to increase volume in the {zone}
+volUpRoomIntent to higher volume in {zone}
+volUpRoomIntent to higher volume in the {zone}
+volUpRoomIntent turn {zone} up
+volUpRoomIntent turn {zone} music up
+volUpRoomIntent turn {zone} sound up
+volUpRoomIntent turn {zone} volume up
+volUpRoomIntent to turn {zone} up
+volUpRoomIntent to turn {zone} music up
+volUpRoomIntent to turn {zone} sound up
+volUpRoomIntent to turn {zone} volume up
+
+volDownRoomIntent turn down {zone}
+volDownRoomIntent turn it down in {zone}
+volDownRoomIntent turn it down in the {zone}
+volDownRoomIntent to turn down {zone}
+volDownRoomIntent to turn it down in {zone}
+volDownRoomIntent to turn it down in the {zone}
+volDownRoomIntent quieter in {zone}
+volDownRoomIntent quieter in the {zone}
+volDownRoomIntent to make it quieter in {zone}
+volDownRoomIntent to make it quieter in the {zone}
+volDownRoomIntent softer in {zone}
+volDownRoomIntent softer in the {zone}
+volDownRoomIntent to make it softer in {zone}
+volDownRoomIntent to make it softer in the {zone}
+volDownRoomIntent to decrease volume in {zone}
+volDownRoomIntent to decrease volume in the {zone}
+volDownRoomIntent to lower volume in {zone}
+volDownRoomIntent to lower volume in the {zone}
+volDownRoomIntent turn {zone} down
+volDownRoomIntent turn {zone} music down
+volDownRoomIntent turn {zone} sound down
+volDownRoomIntent turn {zone} volume down
+volDownRoomIntent to turn {zone} down
+volDownRoomIntent to turn {zone} music down
+volDownRoomIntent to turn {zone} sound down
+volDownRoomIntent to turn {zone} volume down
+
+volUpIntent to turn it up
+volUpIntent louder
+volUpIntent make it louder
+volUpIntent to make it louder
+volUpIntent to increase the volume
+volUpIntent turn the music up
+volUpIntent to turn the music up
+volUpIntent raise the volume
+volUpIntent to raise the volume
+
+volDownIntent to turn it down
+volDownIntent quieter
+volDownIntent softer
+volDownIntent make it quieter
+volDownIntent make it softer
+volDownIntent to make it quieter
+volDownIntent to make it softer
+volDownIntent to decrease the volume
+volDownIntent turn the music down
+volDownIntent to turn the music down
+volDownIntent lower the volume
+volDownIntent to lower the volume
+
+volLevelIntent volume {level}
+volLevelIntent volume {level} percent
+volLevelIntent set volume to {level}
+volLevelIntent set volume to {level} percent
+volLevelIntent make volume {level}
+volLevelIntent make volume {level} percent
+volLevelIntent to set volume to {level}
+volLevelIntent to set volume to {level} percent
+volLevelIntent to make volume {level}
+volLevelIntent to make volume {level} percent
+volLevelIntent to set the volume to {level}
+volLevelIntent to set the volume to {level} percent
+volLevelIntent to make the volume {level}
+volLevelIntent to make the volume {level} percent
+
+volLevelRoomIntent to set {zone} volume to {level}
+volLevelRoomIntent to set {zone} volume to {level} percent
+volLevelRoomIntent to make {zone} volume {level}
+volLevelRoomIntent to make {zone} volume {level} percent
+volLevelRoomIntent to set the {zone} volume to {level}
+volLevelRoomIntent to set the {zone} volume to {level} percent
+volLevelRoomIntent to make the {zone} volume {level}
+volLevelRoomIntent to make the {zone} volume {level} percent
