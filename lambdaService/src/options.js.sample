@@ -1,6 +1,6 @@
 var options = {
-    appid: "<insert your Echo Skill AppID Here",
-    host: "<Insert the FQDN for your local server here>",
+    appid: "amzn1.ask.skill.7e2b02c2-69bf-4fc0-8476-d6d446fb21fc",
+    host: "metacontrol.hopto.org",
     port: "5005",
     timeout: 1500
 };
